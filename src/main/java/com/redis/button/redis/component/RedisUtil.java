@@ -17,6 +17,11 @@ import java.util.Map;
 public class RedisUtil {
     private final RedisTemplate redisTemplate;
 
+    /* PUB/SUB */
+    public void publish(String channel, String message) {
+        redisTemplate.convertAndSend(channel, message);
+    }
+
     /* IN-MEMMORY */
     public boolean setString(String key, String value) {
         try {
