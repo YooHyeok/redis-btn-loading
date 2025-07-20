@@ -10,7 +10,7 @@
 ## 방식
 - ### Redis TTL & 인터벌polling
 - ### Redis Pub/Sub
-
+  - 한 화면에 여러 인터벌이 존재할 경우에 대한 대응
 ## Redis TTL 
 <details>
 <summary>접기/펼치기</summary>
